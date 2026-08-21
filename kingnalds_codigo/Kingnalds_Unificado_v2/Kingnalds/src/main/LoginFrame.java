@@ -1,6 +1,7 @@
 package main;
 
 import ConexionDB.ConexionDB;
+import kingnalds.InicioFrame;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -225,9 +226,9 @@ public class LoginFrame extends JFrame {
                             JOptionPane.INFORMATION_MESSAGE
                     );
 
-                    // Abrir el módulo de gestión de usuarios dentro del mismo proyecto
-                    GestionUsuariosFrame gestionUsuarios = new GestionUsuariosFrame();
-                    gestionUsuarios.setVisible(true);
+                    // Abrir la pantalla principal de Kingnald's
+                    InicioFrame inicio = new InicioFrame();
+                    inicio.setVisible(true);
                     dispose();
 
                 } else {
